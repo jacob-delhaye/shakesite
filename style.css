@@ -1,1 +1,66 @@
+@font-face {
+    font-family: 'bikobold';
+    src: url('font/biko_bold-webfont.eot');
+    src: url('font/biko_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/biko_bold-webfont.woff2') format('woff2'),
+         url('font/biko_bold-webfont.woff') format('woff'),
+         url('font/biko_bold-webfont.ttf') format('truetype'),
+         url('font/biko_bold-webfont.svg#bikobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bikoregular';
+    src: url('font/biko_regular-webfont.eot');
+    src: url('font/biko_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/biko_regular-webfont.woff2') format('woff2'),
+         url('font/biko_regular-webfont.woff') format('woff'),
+         url('font/biko_regular-webfont.ttf') format('truetype'),
+         url('font/biko_regular-webfont.svg#bikoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lecker';
+    src: url('font/leckerlione-regular-webfont.eot');
+    src: url('font/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/leckerlione-regular-webfont.woff2') format('woff2'),
+         url('font/leckerlione-regular-webfont.woff') format('woff'),
+         url('font/leckerlione-regular-webfont.ttf') format('truetype'),
+         url('font/leckerlione-regular-webfont.svg#leckerlioneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body,html,ul{
+    margin: 0 0;
+}
+body{
+    height: 100%;}
+ul{
+    min-width: 640px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.40);
+    height: 50px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    width: 160px;
+    font-family: 'bikoregular';
+    font-size: 22px;
+    height: 50px;
+    line-height:50px;
+}
+li:hover{
+    background-color: rgba(255,255,255,0.50);
+}
+li a{
+    color: #546e7a;
+}
+li a:hover{
+    color: #ffab00;
+}
+a{
+    text-decoration: none;
+}
 
