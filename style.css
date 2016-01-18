@@ -112,3 +112,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, St
 .couleur:last-child{
     background-color:#FFD600;   
 }
+.footer{
+    -moz-box-shadow: 0px -2px 8px 0px #656565;
+    -webkit-box-shadow: 0px -2px 8px 0px #656565;
+    -o-box-shadow: 0px -2px 8px 0px #656565;
+    box-shadow: 0px -2px 8px 0px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=8);
+    height: 40px;
+}
+.footer a{
+    width:100px;
+    font-size: 20px;
+}
