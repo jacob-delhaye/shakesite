@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Contact</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
+<?php require 'menu.php'; ?>
+<div class="flou">
+  <h1>Contacter l'équipe de</h1>
+  <img src="img/Logo_Normal_Blanc.png" alt="" /> <br>
+  <a href="#contenu"><img src="img/fleche.png" alt="accéder au contenu" /></a>
+</div>
+<div class="main">
+<div id="contenu">
 
+<form action="fformulaire.php" method="POST">
+    <fieldset>
+        <legend>Formulaire de contact</legend>
+    <p>
+    <label for="nom">Nom :</label><br>
+    <input type="text" style=" width:500;" id="nom" name="nom" required placeholder="Votre nom..." />
+    </p>
+    <p>
+    <label for="mail">Mail :</label> <br>
+    <input type="email" id="mail" name="mail" required placeholder="Votre adresse mail..."/>
+    </p>
+    <p>
+    <label for="sujet">Sujet :</label> <br>
+    <select name="sujet" id="sujet" required>
+        <option value="" disabled selected>Choisissez le sujet de votre message</option>
+        <option value="1">Proposition d'activité</option>
+        <option value="2">Rapport de bug</option>
+        <option value="3">Encouragement</option>
+        <option value="4">Commentaire</option>
+        <option value="5">Question</option>
+        <option value="6">Recrutement</option>
+        <option value="7">Autre</option>
+    </select>
+
+    <p>
+    <label for="message">Message :</label> <br>
+    <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+    </p>
+     <p class="envoyer">
+    <input type="submit" id="envoyer" name="envoyer" value="Envoyer"/>
+    </p>
+ </fieldset>
+</form>
+
+</div>
+<?php require 'footer.html'; ?>
+</div>
 </body>
 </html>
