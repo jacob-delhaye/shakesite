@@ -1,46 +1,38 @@
 @font-face {
     font-family: 'bikobold';
-    src: url('font/biko_bold-webfont.eot');
-    src: url('font/biko_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/biko_bold-webfont.woff2') format('woff2'),
-         url('font/biko_bold-webfont.woff') format('woff'),
-         url('font/biko_bold-webfont.ttf') format('truetype'),
-         url('font/biko_bold-webfont.svg#bikobold') format('svg');
+    src: url('../biko/font/biko_bold-webfont.eot');
+    src: url('../biko/font/biko_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../biko/font/biko_bold-webfont.woff2') format('woff2'),
+         url('../biko/font/biko_bold-webfont.woff') format('woff'),
+         url('../biko/font/biko_bold-webfont.ttf') format('truetype'),
+         url('../biko/font/biko_bold-webfont.svg#bikobold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'bikoregular';
-    src: url('font/biko_regular-webfont.eot');
-    src: url('font/biko_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/biko_regular-webfont.woff2') format('woff2'),
-         url('font/biko_regular-webfont.woff') format('woff'),
-         url('font/biko_regular-webfont.ttf') format('truetype'),
-         url('font/biko_regular-webfont.svg#bikoregular') format('svg');
+    src: url('../biko/font/biko_regular-webfont.eot');
+    src: url('../biko/font/biko_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../biko/font/biko_regular-webfont.woff2') format('woff2'),
+         url('../biko/font/biko_regular-webfont.woff') format('woff'),
+         url('../biko/font/biko_regular-webfont.ttf') format('truetype'),
+         url('../biko/font/biko_regular-webfont.svg#bikoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'lecker';
-    src: url('font/leckerlione-regular-webfont.eot');
-    src: url('font/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/leckerlione-regular-webfont.woff2') format('woff2'),
-         url('font/leckerlione-regular-webfont.woff') format('woff'),
-         url('font/leckerlione-regular-webfont.ttf') format('truetype'),
-         url('font/leckerlione-regular-webfont.svg#leckerlioneregular') format('svg');
+    src: url('../lecker/font/leckerlione-regular-webfont.eot');
+    src: url('../lecker/font/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../lecker/font/leckerlione-regular-webfont.woff2') format('woff2'),
+         url('../lecker/font/leckerlione-regular-webfont.woff') format('woff'),
+         url('../lecker/font/leckerlione-regular-webfont.ttf') format('truetype'),
+         url('../lecker/font/leckerlione-regular-webfont.svg#leckerlioneregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 body,html,ul{
     margin: 0 0;
-}
-body,html{
-    height: 100%;
-}
-.main{
-    width: 100%;
-    height: 100%;
-    background-image:url('img/motif_fond.jpg');
 }
 nav{
     position: absolute;
@@ -95,32 +87,72 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, St
     width: 16.66%;
 }
 .couleur:first-child{
-    background-color:#FF5252;   
+    background-color:#FF5252;
 }
 .couleur:nth-child(2){
-    background-color:#E040FB;   
+    background-color:#E040FB;
 }
 .couleur:nth-child(3){
-    background-color:#40C4FF;   
+    background-color:#40C4FF;
 }
 .couleur:nth-child(4){
-    background-color:#51BCAF;   
+    background-color:#51BCAF;
 }
 .couleur:nth-child(5){
-    background-color:#64DD17;   
+    background-color:#64DD17;
 }
 .couleur:last-child{
-    background-color:#FFD600;   
+    background-color:#FFD600;
 }
-.footer{
+.flou{
+    background-image: url("img/roses.jpg");
+    background-size: cover;
+    padding-top: 250px;
+    text-align: center;
+}
+.flou h1{
+  font-family: 'bikoregular';
+  font-weight: normal;
+  font-size: 40px;
+  color: white;
+}
+.flou img{
+  width: 450px;
+}
+.flou a img{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 100px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-image:url('../img/motif_fond.jpg');
+    display: inline-block;
+    -moz-box-shadow: 0px -5px 10px 0px #404040;
+    -webkit-box-shadow: 0px -5px 10px 0px #404040;
+    -o-box-shadow: 0px -5px 10px 0px #404040;
+    box-shadow: 0px -5px 10px 0px #404040;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#404040, Direction=90, Strength=10);
+}
+#contenu{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+footer{
+    display: inline-block;
     -moz-box-shadow: 0px -2px 8px 0px #656565;
     -webkit-box-shadow: 0px -2px 8px 0px #656565;
     -o-box-shadow: 0px -2px 8px 0px #656565;
     box-shadow: 0px -2px 8px 0px #656565;
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=8);
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=8);
     height: 40px;
 }
-.footer a{
+footer ul{
+    height: 40px;
+}
+footer a{
     width:100px;
     font-size: 20px;
 }
