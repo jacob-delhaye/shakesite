@@ -1,33 +1,33 @@
 @font-face {
     font-family: 'bikobold';
-    src: url('../biko/font/biko_bold-webfont.eot');
-    src: url('../biko/font/biko_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../biko/font/biko_bold-webfont.woff2') format('woff2'),
-         url('../biko/font/biko_bold-webfont.woff') format('woff'),
-         url('../biko/font/biko_bold-webfont.ttf') format('truetype'),
-         url('../biko/font/biko_bold-webfont.svg#bikobold') format('svg');
+    src: url('font/biko/biko_bold-webfont.eot');
+    src: url('font/biko/biko_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/biko/biko_bold-webfont.woff2') format('woff2'),
+         url('font/biko/biko_bold-webfont.woff') format('woff'),
+         url('font/biko/biko_bold-webfont.ttf') format('truetype'),
+         url('font/biko/biko_bold-webfont.svg#bikobold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'bikoregular';
-    src: url('../biko/font/biko_regular-webfont.eot');
-    src: url('../biko/font/biko_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../biko/font/biko_regular-webfont.woff2') format('woff2'),
-         url('../biko/font/biko_regular-webfont.woff') format('woff'),
-         url('../biko/font/biko_regular-webfont.ttf') format('truetype'),
-         url('../biko/font/biko_regular-webfont.svg#bikoregular') format('svg');
+    src: url('font/biko/biko_regular-webfont.eot');
+    src: url('font/biko/biko_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/biko/biko_regular-webfont.woff2') format('woff2'),
+         url('font/biko/biko_regular-webfont.woff') format('woff'),
+         url('font/biko/biko_regular-webfont.ttf') format('truetype'),
+         url('font/biko/biko_regular-webfont.svg#bikoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'lecker';
-    src: url('../lecker/font/leckerlione-regular-webfont.eot');
-    src: url('../lecker/font/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../lecker/font/leckerlione-regular-webfont.woff2') format('woff2'),
-         url('../lecker/font/leckerlione-regular-webfont.woff') format('woff'),
-         url('../lecker/font/leckerlione-regular-webfont.ttf') format('truetype'),
-         url('../lecker/font/leckerlione-regular-webfont.svg#leckerlioneregular') format('svg');
+    src: url('font/lecker/leckerlione-regular-webfont.eot');
+    src: url('font/lecker/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lecker/leckerlione-regular-webfont.woff2') format('woff2'),
+         url('font/lecker/leckerlione-regular-webfont.woff') format('woff'),
+         url('font/lecker/leckerlione-regular-webfont.ttf') format('truetype'),
+         url('font/lecker/leckerlione-regular-webfont.svg#leckerlioneregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,7 +38,7 @@ nav{
     position: absolute;
     width: 100%;
 }
-ul{
+header ul{
     min-width: 640px;
     width: 100%;
     background-color: rgba(255,255,255,0.40);
@@ -47,19 +47,19 @@ ul{
     margin: 0 0;
     padding: 0;
 }
-li{
+header li{
     display: inline-block;
     font-family: 'bikoregular';
     font-size: 22px;
     height: 50px;
     line-height:50px;
 }
-li a{
+header li a{
     color: #546e7a;
     display: inline-block;
     width: 160px;
 }
-li a:hover{
+header li a:hover{
     color: #ffab00;
     background-color: rgba(255,255,255,0.50);
 }
@@ -105,7 +105,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, St
     background-color:#FFD600;
 }
 .flou{
-    background-image: url("img/roses.jpg");
+    background-image: url("contact/img/roses.jpg");
     background-size: cover;
     padding-top: 250px;
     text-align: center;
@@ -127,7 +127,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, St
 .main{
     width: 100%;
     height: 100%;
-    background-image:url('../img/motif_fond.jpg');
+    background-image:url('img/motif_fond.jpg');
     display: inline-block;
     -moz-box-shadow: 0px -5px 10px 0px #404040;
     -webkit-box-shadow: 0px -5px 10px 0px #404040;
