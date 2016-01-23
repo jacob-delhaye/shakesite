@@ -38,28 +38,31 @@ nav{
     position: absolute;
     width: 100%;
 }
-header ul{
+header ul, footer ul{
     min-width: 640px;
     width: 100%;
     background-color: rgba(255,255,255,0.40);
-    height: 50px;
     text-align: center;
     margin: 0 0;
     padding: 0;
 }
-header li{
+header li, footer li{
     display: inline-block;
     font-family: 'bikoregular';
     font-size: 22px;
-    height: 50px;
     line-height:50px;
 }
-header li a{
+header li{
+  height: 50px;
+}
+header li a, footer li a{
     color: #546e7a;
     display: inline-block;
-    width: 160px;
 }
-header li a:hover{
+header li a{
+  width: 160px;
+}
+header li a:hover, footer li a:hover{
     color: #ffab00;
     background-color: rgba(255,255,255,0.50);
 }
@@ -140,7 +143,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, St
     margin: 0 auto;
     padding-top: 5%;
 }
-footer{
+footer nav{
     display: inline-block;
     -moz-box-shadow: 0px -2px 8px 0px #656565;
     -webkit-box-shadow: 0px -2px 8px 0px #656565;
@@ -149,7 +152,7 @@ footer{
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=8);
     height: 40px;
 }
-footer ul{
+footer nav ul{
     height: 40px;
 }
 footer a{
