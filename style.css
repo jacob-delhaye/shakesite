@@ -1,1 +1,53 @@
+/*--------------CONTENU---------------*/
 
+section.aboutus h2{
+    margin: 2rem 0 2rem 0;
+    font-size: 3.75rem;
+    font-weight: lighter;
+}
+section.aboutus p{
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+}
+section.aboutus h3{
+    font-family: 'Lecker', serif;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+section.aboutus{
+    text-align: center;
+}
+div.members{
+    width: 880px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+section.membre-gauche, section.membre-droite{
+    padding-bottom: 50px;
+}
+section.membre-gauche h3, section.membre-gauche p, section.membre-droite h3, section.membre-droite p{
+    width: 500px;
+    text-align: justify;
+}
+section.membre-gauche h3, section.membre-gauche p{
+    margin-left: 275px;
+}
+section.membre-droite h3, section.membre-droite p{
+    margin-left: 75px;
+}
+section.membre-gauche img{
+    float: left;
+}
+section.membre-droite img{
+    float: right;
+}
+section.membre-droite h3, section.membre-gauche h3{
+    font-family: 'lecker', sans-serif;
+    font-size: 1.5em;
+}
+section.membre-droite h3{
+    text-align: right;
+}
+#contenu{
+    margin-bottom: 100px;
+}
