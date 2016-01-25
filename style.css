@@ -17,7 +17,6 @@ h1, #video-tuto{
 	width: 100%;
 }
 #contenu-accueil-flou{
-	z-index: 1;
 	position: absolute;
 	top: 60px; /*descendre le contenu, pour que le hover du menu fonctionne*/
 }
