@@ -3,9 +3,75 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Accueil</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="../accueil/index.html">Accueil</a></li>
+				<li><a href="../agence/index.html">L'Agence</a></li>
+				<li><a href="../faq/index.html">FAQ</a></li>
+				<li><a href="../contact/index.html">Contact</a></li>
+			</ul>
+			<div class="bande">
+			 <div class="couleur"></div><!--	eviter les whitespaces   
+		     --><div class="couleur"></div><!--
+			 --><div class="couleur"></div><!--
+			 --><div class="couleur"></div><!--
+			 --><div class="couleur"></div><!--
+			 --><div class="couleur"></div><!--
+			--></div>
+		</nav>
+	</header>
+	<section id="accueil-floue">
+		<article id="contenu-accueil-flou">
+			<img src="../img/logo_blanc.png" alt="logo" width="800">
+			<p>Une boîte, des idées.</p> <!-- <p> pour avoir un saut de ligne automatique -->
+			<a href="#DL" id="bouton-DL">Télécharger</a>
+			<a href="#main"><img src="../img/fleche.png" alt=""></a>
+		</article>
+		<video autoplay loop muted>
+			<source src="../video/video-bg.webm" type="video/webm">
+			<source src="../video/video-bg.mp4" type="video/mp4">
+			<source src="../video/video-bg.ogv" type="video/ogv">
+		</video>
+	</section>
 
+	<section id="main">
+		<article id="video-promo">
+			<h1><span class="shakin">Shakin'</span>BOX c'est quoi ?</h1>
+			<object type="application/x-shockwave-flash" width="525" height="300" data="https://www.youtube.com/v/J---aiyznGQ">
+					<!-- <param name="movie" value="https://www.youtube.com/v/J---aiyznGQ"/>
+					<param name="wmode" value="transparent"/> -->
+			</object>
+		</article>
+
+			
+		<article id="tel-text">
+			<h2>Lorem ipsum !</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</article>
+		<img src="img/tel.png" alt="" width="168" height="345">
+			
+
+		<article id="video-tuto">
+			<h2>Lorem ipsum !</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+			<object type="application/x-shockwave-flash" width="350" height="200" data="https://www.youtube.com/v/J---aiyznGQ">
+					<!-- <param name="movie" value="https://www.youtube.com/v/J---aiyznGQ"/>
+					<param name="wmode" value="transparent"/> -->
+			</object>
+		</article>
+	</section> <!-- FIN CONTENU -->
+	<!-- PAS DANS LE MAIN, CAR PAS DE BACKGROUND IMG ICI-->
+	<section id="DL">
+		<h1>Télécharger <span class="shakin">Shakin'</span>BOX</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<img src="img/appli.png" alt="logo version application" width="120" height="120">
+	</section>
+	
 </body>
 </html>
