@@ -1,1 +1,66 @@
+/* ACCUEIL VIDEO + TEXTES FLOU */
+#contenu-accueil-flou, video{
+	width: 100%;
+}
+#contenu-accueil-flou{
+	z-index: 1;
+	position: absolute;
+	top: 60px;
+}
+#contenu-accueil-flou video{
+	position: relative;
+}
+#contenu-accueil-flou img{
+	display: block; /*pour centrer les types inline (img logo et flèche)*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 14%;
+	margin-bottom: 0;
+}
+#contenu-accueil-flou p, #contenu-accueil-flou>a{ /*textes p et liens a*/
+	color: white;
+	font-family: 'bikoregular';
+}
+#contenu-accueil-flou p{
+	text-align: center;
+	font-size: 30px;
+}
+#bouton-DL{ /*le > ou first-child ne fonctionnent pas donc j'ai mis un ID*/
+	display: block;
+	margin: 0 auto;
+	width: 190px;
+	margin-top: 100px;
+	font-size: 25px;
+	background-color: #ffab00;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 30px;
+	border-radius: 7px;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+ 	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+ 	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+ 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+article:not(#contenu-accueil-flou){ /*Toutes les sections sauf celle avec l'id "accueil-floue" */
+	margin: 20px 0 20px 0;
+}
+h2, .shakin{
+	font-family: 'lecker';
+}
+h1, #video-tuto{
+	text-align: center;
+}
+object{
+	display: block; /*type inline donc block pour centrer les videos youtube */
+	margin: auto;
+}
 
+#tel-text{
+	text-align: left;
+	float: left;
+	width: 50%;
+}
+#DL{
+	width: 1000px;
+	margin: 0 auto;
+}
