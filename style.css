@@ -40,8 +40,8 @@ option{
 }
 #sujet{
     -webkit-appearance: none;
-   -moz-appearance:    nonnee;
-   appearance:         nonte;
+   -moz-appearance:    none;
+   appearance:         none;
   background: #fff url(img/select.png) no-repeat center right;
 }
 :focus{
