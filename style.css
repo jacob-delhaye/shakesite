@@ -1,9 +1,14 @@
-/*CARACTERISTIQUES TEXTES*/
-h2, .shakin{
-	font-family: 'lecker';
+/*CARACTERISTIQUES DES TEXTES*/
+h1{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 45px;
 }
 h1, #video-tuto{
 	text-align: center;
+}
+h2, .shakin{
+	font-family: 'lecker';
 }
 #contenu-accueil-flou p{
 	text-align: center;
@@ -12,7 +17,17 @@ h1, #video-tuto{
 #contenu-accueil-flou p, #contenu-accueil-flou a{
 	color: white;
 }
+
+/* LOGO BLANC */
+.logo{
+	max-width: 800px;
+	width: 80%;
+}
+
 /* POSITIONNEMENT ELEMENTS FLOUS */
+#accueil-flou video{
+	position: relative;
+}
 #contenu-accueil-flou, video{
 	width: 100%;
 }
@@ -20,9 +35,7 @@ h1, #video-tuto{
 	position: absolute;
 	top: 60px; /*descendre le contenu, pour que le hover du menu fonctionne*/
 }
-#contenu-accueil-flou video{
-	position: relative;
-}
+
 /*BOUTON ORANGE TELECHARGER*/
 #bouton-DL{ /*le > ou first-child ne fonctionnent pas donc j'ai mis un ID*/
 	display: block;
@@ -34,6 +47,7 @@ h1, #video-tuto{
 	text-decoration: none;
 	text-align: center;
 	padding: 10px 20px;
+
 /*OMBRE PORTEE*/
 	border-radius: 7px;
 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
@@ -41,37 +55,70 @@ h1, #video-tuto{
  	-o-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
  	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
 }
-/*POUR CENTRER BOITES TEXTES IMG */
+
+/*POUR CENTRER LES BOITES TEXTES IMG */
 #contenu-accueil-flou img{ /*IMG LOGO BLANC & FLECHE*/
 	display: block; /*centrer les types inline*/
 	margin: 9% auto 0 auto;
 }
-object{ /*VIDEOS YOUTUBE*/
+iframe{ /*VIDEOS YOUTUBE*/
 	display: block; /*centrer type inline */
 	margin: auto;
 }
-#DL, #main article{ /*centrer les boites*/
+#DL article, #main article{ /*centrer les boites*/
 	width: 1000px;
 	margin: 0 auto;
 }
-/*article:not(#contenu-accueil-flou){ /*Toutes les sections sauf celle avec l'id "accueil-floue" /
-	margin: 20px 0 20px 0;
-}*/
-
 /*TEXTES A GAUCHE IMG A DROITE*/
-#texte-tel, #DL p{
+#texte-tel{
 	text-align: left;
 	float: left;
-}
-.img-droite{
-	margin-left: 35px;
-}
-#DL p{ /*Taille boite - largeur img - margin-left*/
-	width: 845px; /*1000-120-35 = 845*/
 }
 #texte-tel{ /*Taille boite - largeur img - margin-left*/
 	width: 797px; /*1000-168-35 = 797*/
 }
+.img-droite{
+	margin-left: 35px;
+}
+#main{ /* ESPACEMENT ENTRE MAIN ET DL */
+	padding-bottom: 70px;
+}
+
+/* BLOC TELECHARGEMENT */
 #DL{
+	height: 400px;
 	background-color: #fdf2e2;
+	-moz-box-shadow: 0px -2px 8px 0px #656565;
+    -webkit-box-shadow: 0px -2px 8px 0px #656565;
+    -o-box-shadow: 0px -2px 8px 0px #656565;
+    box-shadow: 0px -2px 8px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=8);
+}
+#DL p{
+	margin-top: 0;
+	/*Taille boite - largeur img - margin-left*/
+	width: 845px; /*1000-120-35 = 845*/
+}
+#DL p img{
+	vertical-align: middle;
+}
+#DL h1{
+	padding-top: 35px;
+	margin-bottom: 30px;
+}
+#DL #store img{
+	display:inline-block;
+	margin: 0 auto;
+	margin-right:5%;
+	margin-top: 6%;
+}
+#DL #store{
+	width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+	.logo{
+		width: 70%;
+	}
 }
