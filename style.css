@@ -1,22 +1,24 @@
-
 fieldset{
     border:none;
+    padding: 0 5%;
 }
 legend{
     text-align: center;
     font-size: 50px;
 }
 form{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     font-size: 25px;
     text-align: left;
     font-family: 'bikoregular';
 }
 input, textarea,select{
+    box-sizing: border-box;
     padding-left: 20px;
     border: none;
-    width: 500px;
+    width: 100%;
     height: 40px;
     border-radius: 0.5em;
     font-size: 18px;
@@ -30,9 +32,6 @@ input, textarea,select{
 ::-webkit-input-placeholder {
   color: #90a4ae;
 }
-select{
-  box-sizing: content-box;
-}
 select, option:disabled{
     color:#90a4ae;
 }
@@ -41,7 +40,7 @@ option{
 }
 #sujet{
     -webkit-appearance: none;
-   -moz-appearance:    nonte;
+   -moz-appearance:    nonnee;
    appearance:         nonte;
   background: #fff url(img/select.png) no-repeat center right;
 }
@@ -77,10 +76,10 @@ textarea{
 }
 #envoyer:hover{
   transform: scale(1.1);
-  -moz-box-shadow: 0px 5px 10px 0px #404040;
-  -webkit-box-shadow: 0px 5px 10px 0px #404040;
-  -o-box-shadow: 0px 5px 10px 0px #404040;
-  box-shadow: 0px 5px 10px 0px #404040;
+  -moz-box-shadow: 0px 0px 10px 0px #404040;
+  -webkit-box-shadow: 0px 0px 10px 0px #404040;
+  -o-box-shadow: 0px 0px 10px 0px #404040;
+  box-shadow: 0px 0px 10px 0px #404040;
   filter:progid:DXImageTransform.Microsoft.Shadow(color=#404040, Direction=90, Strength=10);
 }
 #message{
@@ -88,7 +87,15 @@ textarea{
     font-family: 'bikoregular';
     padding-top: 20px;
 }
-
+form p:nth-child(5){
+  margin-bottom: 0;
+}
+form p:nth-child(6){
+  margin: 0;
+}
+.obligatoire{
+  font-size: 15px;
+}
 .footer{
     display: inline-block;
     -moz-box-shadow: 0px -2px 8px 0px #656565;
