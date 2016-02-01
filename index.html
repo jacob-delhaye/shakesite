@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 <body>
-<?php require 'menu.php'; ?>
+  <header>
+  <?php require '../menu-footer/menu.html'; ?>
+  </header>
+
 <div class="flou">
   <h1>Contacter l'équipe de</h1>
-  <img src="img/Logo_Normal_Blanc.png" alt="" /> <br>
-  <a href="#contenu"><img src="img/fleche.png" alt="accéder au contenu" /></a>
+  <img src="../img/logo_blanc.png" alt=""  class='logo'/> <br>
+  <a href="#main"><img class='fleche' src="img/fleche.png" alt="accéder au contenu"/></a>
 </div>
-<div class="main">
-<div id="contenu">
+<div id="main">
 
 <form action="formulaire.php" method="POST">
     <fieldset>
         <legend>Formulaire de contact</legend>
     <p>
-    <label for="nom">Nom :</label><br>
+    <label for="nom">Nom* :</label><br>
     <input type="text" style=" width:500;" id="nom" name="nom" required placeholder="Votre nom..." />
     </p>
     <p>
-    <label for="mail">Mail :</label> <br>
+    <label for="mail">Mail* :</label> <br>
     <input type="email" id="mail" name="mail" required placeholder="Votre adresse mail..."/>
     </p>
     <p>
-    <label for="sujet">Sujet :</label> <br>
+    <label for="sujet">Sujet* :</label> <br>
     <select name="sujet" id="sujet" required>
-        <option value="" disabled selected>Choisissez le sujet de votre message</option>
+        <option value="" disabled selected>Le sujet de votre message</option>
         <option value="1">Proposition d'activité</option>
         <option value="2">Rapport de bug</option>
         <option value="3">Encouragement</option>
@@ -41,17 +45,34 @@
     </select>
 
     <p>
-    <label for="message">Message :</label> <br>
+    <label for="message">Message* :</label> <br>
     <textarea id="message" name="message" required placeholder="Votre message"></textarea>
     </p>
+    <p class="obligatoire">* champs obligatoires</p>
      <p class="envoyer">
     <input type="submit" id="envoyer" name="envoyer" value="Envoyer"/>
     </p>
  </fieldset>
 </form>
 
+<?php require '../menu-footer/footer.html'; ?>
+
 </div>
-<?php require 'footer.html'; ?>
-</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(window).resize(function(){
+  if(window.innerWidth>701){
+    $('header ul').css('display','block');
+  }else{
+    $('header ul').css('display','none');
+
+  }
+
+});
+$('.hamburger').on('click',function(){
+  $('header ul').slideToggle();
+});
+</script>
 </body>
 </html>
