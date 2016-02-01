@@ -26,26 +26,23 @@
 		</nav>
 	</header>
 	<section id="accueil-floue">
-		<article id="contenu-accueil-flou">
-			<img src="../img/logo_blanc.png" alt="logo" width="800">
-			<p>Une boîte, des idées.</p> <!-- <p> pour avoir un saut de ligne automatique -->
-			<a href="#DL" id="bouton-DL">Télécharger</a>
-			<a href="#main"><img src="../img/fleche.png" alt=""></a>
-		</article>
 		<video autoplay loop muted>
 			<source src="../video/video-bg.webm" type="video/webm">
 			<source src="../video/video-bg.mp4" type="video/mp4">
 			<source src="../video/video-bg.ogv" type="video/ogv">
 		</video>
+		<article id="contenu-accueil-flou">
+			<img src="../img/logo_blanc.png" alt="logo" width="800" class="logo">
+			<p>Une boîte, des idées.</p> <!-- <p> pour avoir un saut de ligne automatique -->
+			<a href="#DL" id="bouton-DL">Télécharger</a>
+			<a href="#main"><img src="../img/fleche.png" alt="" class="fleche"></a>
+		</article>
 	</section>
 
 	<section id="main"> <!-- pour le box shadow -->
 		<article id="video-promo">
-			<h1><b><span class="shakin">Shakin'</span>BOX c'est quoi ?</b></h1>
-			<object type="application/x-shockwave-flash" width="525" height="300" data="https://www.youtube.com/v/J---aiyznGQ">
-					<!-- <param name="movie" value="https://www.youtube.com/v/J---aiyznGQ"/>
-					<param name="wmode" value="transparent"/> -->
-			</object>
+			<h1><span class="shakin">Shakin'</span>BOX c'est quoi ?</h1>
+			<iframe width="525" height="300" src="https://www.youtube.com/embed/J---aiyznGQ" allowfullscreen></iframe>
 		</article>
 
 		<article>
@@ -60,23 +57,21 @@
 			<h2>Lorem ipsum !</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-			<object type="application/x-shockwave-flash" width="350" height="200" data="https://www.youtube.com/v/J---aiyznGQ">
-					<!-- <param name="movie" value="https://www.youtube.com/v/J---aiyznGQ"/>
-					<param name="wmode" value="transparent"/> -->
-			</object>
-		</article>
-
-		<article id="DL">
-			<h1>Télécharger <b><span class="shakin">Shakin'</span>BOX</h1></b>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<img src="img/appli.png" alt="logo version application" width="120" height="120" class="img-droite">
+			<iframe width="437.5" height="250" src="https://www.youtube.com/embed/J---aiyznGQ" allowfullscreen></iframe>
 		</article>
 	</section> <!-- FIN MAIN -->
-<!--	<section id="DL">
-		<h1>Télécharger <b><span class="shakin">Shakin'</span>BOX</h1></b>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<img src="img/appli.png" alt="logo version application" width="120" height="120" class="img-droite">
+	<section id="DL">
+		<article>
+			<h1>Télécharger <span class="shakin">Shakin'</span>BOX</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.			
+			<img src="img/appli.png" alt="logo version application" width="120" height="120" class="img-droite"></p>
+
+			<div id="store">
+				<a href="#"><img src="img/google.jpg" alt="télécharger sur Google Play" width="180" height="65"></a>
+				<a href="#"><img src="img/apple.jpg" alt="télécharger sur Apple Store" width="180" height="65" class="store-centrer"></a>
+				<a href="#"><img src="img/microsoft.jpg" alt="télécharger sur Microsoft" width="180" height="65"></a>
+			</div>
+		</article>
 	</section>
-	-->
 </body>
 </html>
