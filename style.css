@@ -117,7 +117,7 @@ height: 8px;
     background-color:#FFD600;
 }
 .flou{
-    background-image: url("contact/img/roses.jpg");
+    background-image: url("img/groupeflou.jpg");
     background-size: cover;
     padding-top: 14.97%;
     /*padding-top: 250px;*/
@@ -207,7 +207,7 @@ footer a{
     font-size:20px;
     height: 40px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .hamburger, nav img{
       display: inline-block;
   }
